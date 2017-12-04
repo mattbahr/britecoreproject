@@ -1,0 +1,18 @@
+<h1 style="margin: 12px auto; text-align: center;">Risk Type: {{risk_type.name}}</h1>
+
+<form style="margin: auto; width: 100%; position: fixed; text-align: center;">
+    {% csrf_token %}
+    {% for field in risk_type.risktypefield_set.all %}
+        <label for="{{field.name}}_field">{{field.name}}: </label>
+        {% if field.field_type == 'ENUM' %}
+            <select>
+                {% for option in field.risktypefieldoption_set.all %}
+                    <option value="{{option.option_text}}">{{option.option_text}}</option>
+                {% endfor %}
+            </select>
+        {% else %}
+            <input type="{{field.field_type}}" name="field" id="{{field.name}}_field" />
+        {% endif %}
+        <br /><br />
+    {% endfor %}
+</form>
