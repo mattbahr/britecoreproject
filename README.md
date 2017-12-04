@@ -7,11 +7,9 @@ Here are the steps to run the application once you have the source folder
 downloaded:
 
 1) In the command line, go to the root folder for the application.
-2) Set up the database using the supplied migration file by running the command:
-   python manage.py migrate
-3) Start the development server by running the command:
+2) Start the development server by running the command:
    python manage.py runserver
-4) In your web browser, go to the address indicated in your command line. Append
+3) In your web browser, go to the address indicated in your command line. Append
    /britecoreapp/risktype/Automobile/ to the url.
 
 Here is a rundown of the source code:
