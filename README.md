@@ -5,7 +5,8 @@ relational database that would allow a user of the application to define their
 own types of risk. The project required a front end that would display a form
 for the risk type containing it's designated fields. Each input field must be
 of the appropriate type (text, number, date, or select), designated in the 
-database. Submit functionality was not required.
+database. Submit functionality was not required. The original problem definition
+is located at https://github.com/IntuitiveWebSolutions/ProductDevelopmentProject.
 
 My solution uses the Django framework, so to run it you must have
 Django installed. Installation instructions are available at
